@@ -6,7 +6,7 @@ const app = express();
 
 app.use(morgan('tiny'));
 
-const publicPath = path.resolve('public');
+const publicPath = path.resolve('dist/public');
 app.use("/public", express.static(publicPath));
 app.get("*", function(req, res) {
     res.sendFile(path.join(publicPath, "index.html"));
