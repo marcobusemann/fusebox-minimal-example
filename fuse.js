@@ -33,6 +33,6 @@ fuse
    .watch("client/**")
    .target("browser@es5")
    .hmr()
-   .instructions(" > client/index.ts");
+   .instructions(" > client/index.tsx");
 
 fuse.run();
